@@ -22,13 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f868330-da7a-480d-b2a7-f4de5538e605" name="Default Changelist" comment="기본값 타입">
+    <list default="true" id="1f868330-da7a-480d-b2a7-f4de5538e605" name="Default Changelist" comment="실전 예제 5 - 연관관계 관리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/DeliveryStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/DeliveryStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,7 @@
       <recent name="jpabook.jpashop.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ValueMain">
+  <component name="RunManager" selected="Application.JpaMain">
     <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jpabook.jpashop.JpaMain" />
       <module name="jpashop" />
@@ -108,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ValueMain" />
         <item itemvalue="Application.JpaMain" />
+        <item itemvalue="Application.ValueMain" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +112,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1f868330-da7a-480d-b2a7-f4de5538e605" name="Default Changelist" comment="" />
-      <changelist id="" name="기본값 타입" comment="" />
       <created>1607488335406</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -129,7 +123,8 @@
       <workItem from="1607572265365" duration="7904000" />
       <workItem from="1607741846168" duration="418000" />
       <workItem from="1607748660685" duration="1321000" />
-      <workItem from="1607750013139" duration="657000" />
+      <workItem from="1607750013139" duration="2011000" />
+      <workItem from="1607759650609" duration="1256000" />
     </task>
     <task id="LOCAL-00001" summary="실전 예제 2 - 연관관계 매핑 시작">
       <created>1607566657780</created>
@@ -173,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607749934765</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="실전 예제 5 - 연관관계 관리">
+      <created>1607750805525</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607750805525</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,15 +197,19 @@
     <MESSAGE value="실전 예제 2 - 연관관계 매핑 시작" />
     <MESSAGE value="실전 예제 3 - 다양한 연관관계 매핑" />
     <MESSAGE value="실전 예제 4 - 상속관계 매핑" />
-    <MESSAGE value="실전 예제 5 - 연관관계 관리" />
     <MESSAGE value="기본값 타입" />
-    <option name="LAST_COMMIT_MESSAGE" value="기본값 타입" />
+    <MESSAGE value="실전 예제 5 - 연관관계 관리" />
+    <option name="LAST_COMMIT_MESSAGE" value="실전 예제 5 - 연관관계 관리" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1116" y="404" key="#com.intellij.ide.util.MemberChooser" timestamp="1607589898173">
+    <state x="903" y="362" key="#Template" timestamp="1607761195231">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="1116" y="404" key="#com.intellij.ide.util.MemberChooser/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607589898173" />
+    <state x="903" y="362" key="#Template/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607761195231" />
+    <state x="1116" y="404" key="#com.intellij.ide.util.MemberChooser" timestamp="1607761397481">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="1116" y="404" key="#com.intellij.ide.util.MemberChooser/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607761397481" />
     <state x="746" y="617" width="687" height="345" key="Github.ShareDialog" timestamp="1607491156813">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -212,33 +218,33 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="984" y="413" key="Github.UntrackedFilesDialog/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607491171164" />
-    <state width="2455" height="492" key="GridCell.Tab.0.bottom" timestamp="1607749990422">
+    <state width="2455" height="492" key="GridCell.Tab.0.bottom" timestamp="1607761849685">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="492" key="GridCell.Tab.0.bottom/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607749990422" />
-    <state width="2455" height="492" key="GridCell.Tab.0.center" timestamp="1607749990422">
+    <state width="2455" height="492" key="GridCell.Tab.0.bottom/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607761849685" />
+    <state width="2455" height="492" key="GridCell.Tab.0.center" timestamp="1607761849685">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="492" key="GridCell.Tab.0.center/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607749990422" />
-    <state width="2455" height="492" key="GridCell.Tab.0.left" timestamp="1607749990422">
+    <state width="2455" height="492" key="GridCell.Tab.0.center/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607761849685" />
+    <state width="2455" height="492" key="GridCell.Tab.0.left" timestamp="1607761849685">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="492" key="GridCell.Tab.0.left/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607749990422" />
-    <state width="2455" height="492" key="GridCell.Tab.0.right" timestamp="1607749990422">
+    <state width="2455" height="492" key="GridCell.Tab.0.left/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607761849685" />
+    <state width="2455" height="492" key="GridCell.Tab.0.right" timestamp="1607761849685">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="492" key="GridCell.Tab.0.right/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607749990422" />
+    <state width="2455" height="492" key="GridCell.Tab.0.right/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607761849685" />
     <state x="1158" y="632" key="VCS.ChangelistChooser" timestamp="1607749924645">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="1158" y="632" key="VCS.ChangelistChooser/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607749924645" />
-    <state x="903" y="453" key="Vcs.Push.Dialog.v2" timestamp="1607750028111">
+    <state x="903" y="453" key="Vcs.Push.Dialog.v2" timestamp="1607750809003">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="903" y="453" key="Vcs.Push.Dialog.v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607750028111" />
-    <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607750674890">
+    <state x="903" y="453" key="Vcs.Push.Dialog.v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607750809003" />
+    <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607751995404">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607750674890" />
+    <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607751995404" />
   </component>
 </project>
