@@ -35,15 +35,16 @@ public class JpaMain {
             entityManager.flush();
             entityManager.clear();
 
-//            String query = "select " +
-//                                "case when m.age <= 10 then '학생요금' " +
-//                                    "when m.age >= 60 then '경로요금' " +
-//                                    "else '일반요금' " +
-//                                "end " +
-//                            "from Member m";
+//            String query = "select concat('a', 'b') from Member m";
+//            String query = "select locate('de','abcdefg') from Member m";
+//            String query = "select size(t.members) from Team t";
+            String query = "select function('group_concat', m.username) from Member m";
 
-//            String query = "select coalesce(m.username, '이름 없는 회원') as username from Member m";
-            String query = "select nullif(m.username, '관리자') as username from Member m";
+//            List<Integer> result = entityManager.createQuery(query, Integer.class).getResultList();
+//            for (Integer s : result) {
+//                System.out.println("s = " + s);
+//            }
+
             List<String> result = entityManager.createQuery(query, String.class).getResultList();
             for (String s : result) {
                 System.out.println("s = " + s);
