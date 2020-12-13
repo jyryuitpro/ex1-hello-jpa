@@ -22,9 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f868330-da7a-480d-b2a7-f4de5538e605" name="Default Changelist" comment="페치 조인 2 - 한계">
+    <list default="true" id="1f868330-da7a-480d-b2a7-f4de5538e605" name="Default Changelist" comment="엔티티 직접 사용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpql/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,7 @@
       <workItem from="1607860495019" duration="1065000" />
       <workItem from="1607862119432" duration="795000" />
       <workItem from="1607863133422" duration="46000" />
-      <workItem from="1607863313178" duration="3318000" />
+      <workItem from="1607863313178" duration="4515000" />
     </task>
     <task id="LOCAL-00001" summary="실전 예제 2 - 연관관계 매핑 시작">
       <created>1607566657780</created>
@@ -287,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607865505821</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="엔티티 직접 사용">
+      <created>1607866737677</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607866737677</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +330,8 @@
     <MESSAGE value="경로 표현식" />
     <MESSAGE value="페치 조인 1 - 기본" />
     <MESSAGE value="페치 조인 2 - 한계" />
-    <option name="LAST_COMMIT_MESSAGE" value="페치 조인 2 - 한계" />
+    <MESSAGE value="엔티티 직접 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="엔티티 직접 사용" />
   </component>
   <component name="WindowStateProjectService">
     <state x="903" y="362" key="#Template" timestamp="1607761195231">
@@ -341,22 +350,22 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="984" y="413" key="Github.UntrackedFilesDialog/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607491171164" />
-    <state width="2455" height="413" key="GridCell.Tab.0.bottom" timestamp="1607866553259">
+    <state width="2455" height="413" key="GridCell.Tab.0.bottom" timestamp="1607866729874">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="413" key="GridCell.Tab.0.bottom/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866553259" />
-    <state width="2455" height="413" key="GridCell.Tab.0.center" timestamp="1607866553259">
+    <state width="2455" height="413" key="GridCell.Tab.0.bottom/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866729874" />
+    <state width="2455" height="413" key="GridCell.Tab.0.center" timestamp="1607866729874">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="413" key="GridCell.Tab.0.center/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866553259" />
-    <state width="2455" height="413" key="GridCell.Tab.0.left" timestamp="1607866553259">
+    <state width="2455" height="413" key="GridCell.Tab.0.center/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866729874" />
+    <state width="2455" height="413" key="GridCell.Tab.0.left" timestamp="1607866729874">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="413" key="GridCell.Tab.0.left/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866553259" />
-    <state width="2455" height="413" key="GridCell.Tab.0.right" timestamp="1607866553259">
+    <state width="2455" height="413" key="GridCell.Tab.0.left/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866729874" />
+    <state width="2455" height="413" key="GridCell.Tab.0.right" timestamp="1607866729874">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="413" key="GridCell.Tab.0.right/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866553259" />
+    <state width="2455" height="413" key="GridCell.Tab.0.right/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866729874" />
     <state x="981" y="421" key="RollbackChangesDialog" timestamp="1607840504687">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -365,10 +374,10 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="1158" y="632" key="VCS.ChangelistChooser/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607838501751" />
-    <state x="903" y="453" key="Vcs.Push.Dialog.v2" timestamp="1607865512820">
+    <state x="903" y="453" key="Vcs.Push.Dialog.v2" timestamp="1607866740992">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="903" y="453" key="Vcs.Push.Dialog.v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607865512820" />
+    <state x="903" y="453" key="Vcs.Push.Dialog.v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607866740992" />
     <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607823656799">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>

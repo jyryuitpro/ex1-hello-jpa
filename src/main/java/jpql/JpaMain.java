@@ -48,14 +48,13 @@ public class JpaMain {
             entityManager.flush();
             entityManager.clear();
 
-//            String query = "select m from Member m where m = :member";
-            String query = "select m from Member m where m.id = :memberId";
+            List<Member> resultList = entityManager.createNamedQuery("Member.findByUsername", Member.class)
+                    .setParameter("username", "회원1")
+                    .getResultList();
 
-            Member findMember = entityManager.createQuery(query, Member.class)
-                    .setParameter("memberId", member1.getId())
-                    .getSingleResult();
-
-            System.out.println("findMember = " + findMember);
+            for (Member member : resultList) {
+                System.out.println("member = " + member);
+            }
 
             transaction.commit();
         } catch (Exception e) {
