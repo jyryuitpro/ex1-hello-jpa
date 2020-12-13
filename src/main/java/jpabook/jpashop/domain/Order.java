@@ -8,7 +8,7 @@ import java.util.List;
 import static javax.persistence.CascadeType.ALL;
 import static javax.persistence.FetchType.LAZY;
 
-@Entity
+//@Entity
 @Table(name = "ORDERS")
 public class Order extends BaseEntity {
 
