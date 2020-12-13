@@ -28,9 +28,9 @@ public class JpaMain {
             Member member = new Member();
             member.setUsername("member1");
             member.setAge(10);
+            member.setType(MemberType.ADMIN);
             member.setTeam(team);
             entityManager.persist(member);
-
 
             entityManager.flush();
             entityManager.clear();
@@ -40,14 +40,26 @@ public class JpaMain {
 //            String query = "select m from Member m, Team t where m.username = t.name";
 //            String query = "select m from Member m left join m.team t on t.name = 'teamA'";
 //            String query = "select m from Member m left join Team t on m.username = t.name";
-            String query = "select (select avg(m1.age) from Member m1) as avgAge from Member m left join Team t on m.username = t.name";
+//            String query = "select (select avg(m1.age) from Member m1) as avgAge from Member m left join Team t on m.username = t.name";
 
-            List<Member> result = entityManager.createQuery(query, Member.class)
+//            List<Member> result = entityManager.createQuery(query, Member.class)
+//                    .getResultList();
+
+//            System.out.println("result.size() = " + result.size());
+//            for (Member member1 : result) {
+//                System.out.println("member1 = " + member1);
+//            }
+
+//            String query = "select m.username, 'HELLO', true from Member m where m.type = jpql.MemberType.ADMIN";
+            String query = "select m.username, 'HELLO', true from Member m where m.type = :userType";
+            List<Object[]> result = entityManager.createQuery(query)
+                    .setParameter("userType", MemberType.ADMIN)
                     .getResultList();
 
-            System.out.println("result.size() = " + result.size());
-            for (Member member1 : result) {
-                System.out.println("member1 = " + member1);
+            for (Object[] objects : result) {
+                System.out.println("objects[0] = " + objects[0]);
+                System.out.println("objects[0] = " + objects[1]);
+                System.out.println("objects[0] = " + objects[2]);
             }
 
             transaction.commit();
