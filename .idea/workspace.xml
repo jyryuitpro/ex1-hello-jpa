@@ -23,22 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f868330-da7a-480d-b2a7-f4de5538e605" name="Default Changelist" comment="실전 예제 6 - 값 타입 매핑">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-12-10__5_29__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-12-10__5_29__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-12-12__2_12____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-12-12__2_12____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/JpaMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,13 +105,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,10 +235,10 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="903" y="362" key="#Template/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607761195231" />
-    <state x="1116" y="404" key="#com.intellij.ide.util.MemberChooser" timestamp="1607818004595">
+    <state x="1116" y="404" key="#com.intellij.ide.util.MemberChooser" timestamp="1607824853748">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="1116" y="404" key="#com.intellij.ide.util.MemberChooser/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607818004595" />
+    <state x="1116" y="404" key="#com.intellij.ide.util.MemberChooser/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607824853748" />
     <state x="746" y="617" width="687" height="345" key="Github.ShareDialog" timestamp="1607491156813">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -256,22 +247,22 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="984" y="413" key="Github.UntrackedFilesDialog/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607491171164" />
-    <state width="2455" height="585" key="GridCell.Tab.0.bottom" timestamp="1607819057683">
+    <state width="2455" height="585" key="GridCell.Tab.0.bottom" timestamp="1607824507312">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="585" key="GridCell.Tab.0.bottom/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607819057683" />
-    <state width="2455" height="585" key="GridCell.Tab.0.center" timestamp="1607819057683">
+    <state width="2455" height="585" key="GridCell.Tab.0.bottom/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607824507312" />
+    <state width="2455" height="585" key="GridCell.Tab.0.center" timestamp="1607824507312">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="585" key="GridCell.Tab.0.center/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607819057683" />
-    <state width="2455" height="585" key="GridCell.Tab.0.left" timestamp="1607819057683">
+    <state width="2455" height="585" key="GridCell.Tab.0.center/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607824507312" />
+    <state width="2455" height="585" key="GridCell.Tab.0.left" timestamp="1607824507312">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="585" key="GridCell.Tab.0.left/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607819057683" />
-    <state width="2455" height="585" key="GridCell.Tab.0.right" timestamp="1607819057683">
+    <state width="2455" height="585" key="GridCell.Tab.0.left/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607824507312" />
+    <state width="2455" height="585" key="GridCell.Tab.0.right" timestamp="1607824507312">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state width="2455" height="585" key="GridCell.Tab.0.right/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607819057683" />
+    <state width="2455" height="585" key="GridCell.Tab.0.right/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607824507312" />
     <state x="1158" y="632" key="VCS.ChangelistChooser" timestamp="1607749924645">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -280,9 +271,9 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="903" y="453" key="Vcs.Push.Dialog.v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607761892940" />
-    <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607751995404">
+    <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607823656799">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
-    <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607751995404" />
+    <state x="1042" y="666" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.2498.1440/-2498.7.2498.1440@62.0.2498.1440" timestamp="1607823656799" />
   </component>
 </project>

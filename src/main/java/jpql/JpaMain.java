@@ -27,32 +27,21 @@ public class JpaMain {
             member.setAge(10);
             entityManager.persist(member);
 
-//            TypedQuery<Member> query1 = entityManager.createQuery("select m from Member m", Member.class);
-//            List<Member> resultList = query1.getResultList();
-//            for (Member member1 : resultList) {
-//                System.out.println("member1 = " + member1);
-//            }
+            entityManager.flush();
+            entityManager.clear();
 
-//            Member result = query1.getSingleResult();
-//            System.out.println("singleResult = " + result);
+//            List<Member> result = entityManager.createQuery("select m from Member m", Member.class).getResultList();
+//            List<Team> result = entityManager.createQuery("select m.team from Member m", Team.class).getResultList();
+//            List<Team> result = entityManager.createQuery("select t from Member m join m.team t", Team.class).getResultList();
+//            entityManager.createQuery("select o.address from Order o", Address.class).getResultList();
 
-//            TypedQuery<Member> query = entityManager.createQuery("select m from Member m where m.id = 10", Member.class);
-//            Member result = query.getSingleResult();
-//            System.out.println("result = " + result);
+            List<MemberDTO> result = entityManager.createQuery("select new  jpql.MemberDTO(m.username, m.age) from Member m", MemberDTO.class).getResultList();
+            MemberDTO memberDTO = result.get(0);
+            System.out.println("memberDTO.getUsername() = " + memberDTO.getUsername());
+            System.out.println("memberDTO.getAge() = " + memberDTO.getAge());
 
-            TypedQuery<Member> query = entityManager.createQuery("select m from Member m where m.username = :username", Member.class);
-            query.setParameter("username", "member1");
-            Member singleResult = query.getSingleResult();
-            System.out.println("singleResult = " + singleResult.getUsername());
-
-            Member result = entityManager.createQuery("select m from Member m where m.username = :username", Member.class)
-                    .setParameter("username", "member1")
-                    .getSingleResult();
-            System.out.println("result = " + result.getUsername());
-
-//            TypedQuery<String> query2 = entityManager.createQuery("select m.username from Member m", String.class);
-
-//            Query query3 = entityManager.createQuery("select m.username, m.age from Member m");
+//            Member findMember = result.get(0);
+//            findMember.setAge(20);
 
             transaction.commit();
         } catch (Exception e) {
