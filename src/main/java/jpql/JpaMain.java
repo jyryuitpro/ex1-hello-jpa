@@ -63,7 +63,8 @@ public class JpaMain {
 //            String query = "select distinct t from Team t join fetch t.members";
             String query = "select t from Team t join t.members m";
 
-            List<Team> result = entityManager.createQuery(query, Team.class).getResultList();
+            List<Team> result = entityManager.createQuery(query, Team.class)
+                    .getResultList();
 
             System.out.println("result.size() = " + result.size());
 
