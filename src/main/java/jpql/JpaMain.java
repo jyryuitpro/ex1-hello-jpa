@@ -5,6 +5,7 @@ import jpabook.jpashop.domain.Order;
 import jpabook.jpashop.domain.OrderItem;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.List;
 
 public class JpaMain {
@@ -35,19 +36,14 @@ public class JpaMain {
             entityManager.flush();
             entityManager.clear();
 
-//            String query = "select concat('a', 'b') from Member m";
-//            String query = "select locate('de','abcdefg') from Member m";
-//            String query = "select size(t.members) from Team t";
-            String query = "select function('group_concat', m.username) from Member m";
+//            String query = "select m.username from Member m";
+//            String query = "select m.team.name from Member m";
+            String query = "select m.username from Team t join t.members m";
 
-//            List<Integer> result = entityManager.createQuery(query, Integer.class).getResultList();
-//            for (Integer s : result) {
-//                System.out.println("s = " + s);
-//            }
+            Collection result = entityManager.createQuery(query, Collection.class).getResultList();
 
-            List<String> result = entityManager.createQuery(query, String.class).getResultList();
-            for (String s : result) {
-                System.out.println("s = " + s);
+            for (Object o : result) {
+                System.out.println("o = " + o);
             }
 
             transaction.commit();
