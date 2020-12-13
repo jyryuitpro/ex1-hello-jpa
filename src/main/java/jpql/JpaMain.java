@@ -48,32 +48,14 @@ public class JpaMain {
             entityManager.flush();
             entityManager.clear();
 
-/*
-            String query = "select m from Member m join fetch m.team";
+//            String query = "select m from Member m where m = :member";
+            String query = "select m from Member m where m.id = :memberId";
 
-            List<Member> result = entityManager.createQuery(query, Member.class).getResultList();
+            Member findMember = entityManager.createQuery(query, Member.class)
+                    .setParameter("memberId", member1.getId())
+                    .getSingleResult();
 
-            for (Member member : result) {
-                System.out.println("member = " + member.getUsername() + ", " + member.getTeam().getName());
-            }
-*/
-
-//            String query = "select t from Team t";
-//            String query = "select t from Team t join fetch t.members";
-//            String query = "select distinct t from Team t join fetch t.members";
-            String query = "select t from Team t join t.members m";
-
-            List<Team> result = entityManager.createQuery(query, Team.class)
-                    .getResultList();
-
-            System.out.println("result.size() = " + result.size());
-
-            for (Team team : result) {
-                System.out.println("team = " + team.getName() + " | members = " + team.getMembers().size());
-                for (Member member : team.getMembers()) {
-                    System.out.println("member = " + member);
-                }
-            }
+            System.out.println("findMember = " + findMember);
 
             transaction.commit();
         } catch (Exception e) {
