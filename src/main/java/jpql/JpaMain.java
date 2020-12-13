@@ -26,7 +26,7 @@ public class JpaMain {
             entityManager.persist(team);
 
             Member member = new Member();
-            member.setUsername("member1");
+            member.setUsername("관리자");
             member.setAge(10);
             member.setType(MemberType.ADMIN);
             member.setTeam(team);
@@ -35,31 +35,18 @@ public class JpaMain {
             entityManager.flush();
             entityManager.clear();
 
-//            String query = "select m from Member m inner join m.team t";
-//            String query = "select m from Member m left join m.team t";
-//            String query = "select m from Member m, Team t where m.username = t.name";
-//            String query = "select m from Member m left join m.team t on t.name = 'teamA'";
-//            String query = "select m from Member m left join Team t on m.username = t.name";
-//            String query = "select (select avg(m1.age) from Member m1) as avgAge from Member m left join Team t on m.username = t.name";
+//            String query = "select " +
+//                                "case when m.age <= 10 then '학생요금' " +
+//                                    "when m.age >= 60 then '경로요금' " +
+//                                    "else '일반요금' " +
+//                                "end " +
+//                            "from Member m";
 
-//            List<Member> result = entityManager.createQuery(query, Member.class)
-//                    .getResultList();
-
-//            System.out.println("result.size() = " + result.size());
-//            for (Member member1 : result) {
-//                System.out.println("member1 = " + member1);
-//            }
-
-//            String query = "select m.username, 'HELLO', true from Member m where m.type = jpql.MemberType.ADMIN";
-            String query = "select m.username, 'HELLO', true from Member m where m.type = :userType";
-            List<Object[]> result = entityManager.createQuery(query)
-                    .setParameter("userType", MemberType.ADMIN)
-                    .getResultList();
-
-            for (Object[] objects : result) {
-                System.out.println("objects[0] = " + objects[0]);
-                System.out.println("objects[0] = " + objects[1]);
-                System.out.println("objects[0] = " + objects[2]);
+//            String query = "select coalesce(m.username, '이름 없는 회원') as username from Member m";
+            String query = "select nullif(m.username, '관리자') as username from Member m";
+            List<String> result = entityManager.createQuery(query, String.class).getResultList();
+            for (String s : result) {
+                System.out.println("s = " + s);
             }
 
             transaction.commit();
